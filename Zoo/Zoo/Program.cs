@@ -1,4 +1,6 @@
 ﻿using System;
+using Zoo.Classes;
+using Zoo.Interface;
 
 namespace Zoo
 {
