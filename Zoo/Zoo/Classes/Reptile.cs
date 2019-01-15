@@ -4,7 +4,16 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    class Reptile
+    //Derived from Animal: Base for Snake & Lizard
+    public abstract class Reptile : Animal 
     {
+        //Properties
+        public abstract int HasLegs { get; set; }
+
+        //Methods
+        public virtual bool CanSwim()
+        {
+            return true;
+        }
     }
 }
