@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.Interface
 {
-    public interface Noise
+    public interface INoise
     {
         //Instance Method
         string Noise();

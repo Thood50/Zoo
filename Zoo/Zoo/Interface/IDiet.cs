@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.Interface
 {
-    interface Diet
+    interface IDiet
     {
     }
 }
