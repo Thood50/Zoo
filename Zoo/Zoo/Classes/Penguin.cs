@@ -17,7 +17,7 @@ namespace Zoo.Classes
         //Instance method
         public string Noise()
         {
-            throw new NotImplementedException();
+            return "Squack";
         }
     }
 }
