@@ -4,7 +4,16 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    class Mammal
+    //Derived from Animal: Base for Feline and Canine
+    public abstract class Mammal : Animal
     {
+        //Properties
+        public virtual bool HasFourLegs { get; set; }
+
+        //Methods
+        public virtual bool Climbing()
+        {
+            return false;
+        }
     }
 }
