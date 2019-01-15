@@ -4,7 +4,16 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    class Bird
+    //Derived from Animal: Baseclass of Duck and Penguin
+    public abstract class Bird
     {
+        //Properties
+        public abstract bool CanFly { get; set; }
+
+        //Methods
+        public virtual string Flying()
+        {
+            return "Im flying mommy, im really flying!";
+        }
     }
 }
