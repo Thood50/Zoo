@@ -16,7 +16,32 @@ Abstract: is a feature, when working within a class, that stats that any concret
  class must have this method or property and you must define it per the situation. In regards to the class itself 
 abstract means you dont have enough information with this class to be a thing, you must be more specific.
 -All my classes were abstract until the last 6 because in all the cases they are to generic, needed to specify more. 
-An example of
+An example of a abstract proptery and method is in Animal I use Habitat and Birth.  All living animals have a natural habitat
+and give birth just in different places and different ways.  So each concrete class needs to define those things to the 
+classes specifcally.
+
+Inheritance: is just what it sounds like.  I parent class passes down its properties and methods for example to any classes derived from it.
+-All my abstract classes pass down properties and methods from Animal class to mammal to feline to the jaguar for example.  So all Concrete
+ animals will end up with the properties and methods from its parents, parents parents, to their parents parents parent.
+
+Polymorphism: is a method to have the ability to restructor what it does does are what a properties value might be for example, that might have been 
+assigned in a prior parent.  While it inherits the method from the parent it can override it to change its value or what it does.
+-In my zoo I demonsrtate this with virtual properties and methods.  In some situations I assign it a value when it was written, and others I planned
+ on giving it a different value but only in certian situations.  For example is in the abstract Lizard class I set a property called Venom as virtual 
+I did this because I know most lizards arnt venomous however in some situations they are, so I want that ability to be flexable and change the value 
+to true in the case that it is venomous.
+
+Encapsulation: while I only really used public in my project, I understand the importance of it and how It can be used.  This sets a property to 
+either private, public, or protected.  private makes it so only properties and methods within the class can see it, while public allows everything/everyone 
+can see it.  Protected I tried to use but I ran into some issues, from my understanding right now protected give a little of both private and public. 
+What I mean by that is nothing outside of the class and any classes derived from the class with the protected property or method have can see it.  
+-I only use public In my project as I wanted everything to be able to see one another to pass down everything with inheritance.  I tried throwing 
+all my abstract classes as protected as I just want them to pass down I dont need its parents to see its childrens stuff.  However I was getting some 
+red lines I couldnt figure out what it was telling em.
+
+Interface: are how we can pass in multiple things through inheritance without the issues that passing in multiple classes may bring.  How it does this 
+is in the Interface doesnt actually set a property value, or a method does.  By doing this it allows us to take inheritance from One Base class and many Interfaces. 
+-In my project I utilized this with two methods.  Diet method and a noise method.  
 
 <h2> Setup: </h2>
 
