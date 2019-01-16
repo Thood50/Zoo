@@ -5,7 +5,7 @@ using System.Text;
 namespace Zoo.Classes
 {
     //Derived from Animal: Baseclass of Duck and Penguin
-    public abstract class Bird
+    public abstract class Bird : Animal
     {
         //Properties
         public abstract bool CanFly { get; set; }
