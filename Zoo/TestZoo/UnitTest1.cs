@@ -54,6 +54,23 @@ namespace TestZoo
         }
 
         [Fact]
+        public void TestGeckoParentTrue()
+        {
+            Gecko silly = new Gecko();
+            bool isFalse = silly.Parent;
+            Assert.False(isFalse);
+        }
+
+        [Fact]
+        public void TestGeckoBecameParent()
+        {
+            Gecko silly = new Gecko();
+            silly.Parent = true;
+            bool isTrue = silly.Parent;
+            Assert.True(isTrue);
+        }
+
+        [Fact]
         public void TestJaguarNoisetInterface()
         {
             Jaguar silly = new Jaguar();
@@ -65,6 +82,23 @@ namespace TestZoo
         {
             Jaguar silly = new Jaguar();
             Assert.Equal("I eat whatever I can catch", silly.Diet());
+        }
+
+        [Fact]
+        public void TestJaguarParentTrue()
+        {
+            Jaguar silly = new Jaguar();
+            bool isFalse = silly.Parent;
+            Assert.False(isFalse);
+        }
+
+        [Fact]
+        public void TestJaguarBecameParent()
+        {
+            Jaguar silly = new Jaguar();
+            silly.Parent = true;
+            bool isTrue = silly.Parent;
+            Assert.True(isTrue);
         }
 
         [Fact]
@@ -82,6 +116,23 @@ namespace TestZoo
         }
 
         [Fact]
+        public void TestWolfParentTrue()
+        {
+            Wolf silly = new Wolf();
+            bool isFalse = silly.Parent;
+            Assert.False(isFalse);
+        }
+
+        [Fact]
+        public void TestWolfBecameParent()
+        {
+            Wolf silly = new Wolf();
+            silly.Parent = true;
+            bool isTrue = silly.Parent;
+            Assert.True(isTrue);
+        }
+
+        [Fact]
         public void TestDuckNoisetInterface()
         {
             Surf_Scoter silly = new Surf_Scoter();
@@ -93,6 +144,23 @@ namespace TestZoo
         {
             Surf_Scoter silly = new Surf_Scoter();
             Assert.Equal("Bread?", silly.Diet());
+        }
+
+        [Fact]
+        public void TestDuckParentTrue()
+        {
+            Duck silly = new Surf_Scoter();
+            bool isFalse = silly.Parent;
+            Assert.False(isFalse);
+        }
+
+        [Fact]
+        public void TestDuckBecameParent()
+        {
+            Duck silly = new Surf_Scoter();
+            silly.Parent = true;
+            bool isTrue = silly.Parent;
+            Assert.True(isTrue);
         }
 
         [Fact]
@@ -108,6 +176,25 @@ namespace TestZoo
             Erect_crested silly = new Erect_crested();
             Assert.Equal("I eat fish?", silly.Diet());
         }
+
+        [Fact]
+        public void TestErectParentTrue()
+        {
+            Erect_crested silly = new Erect_crested();
+            bool isFalse = silly.Parent;
+            Assert.False(isFalse);
+        }
+
+        [Fact]
+        public void TestErectBecameParent()
+        {
+            Erect_crested silly = new Erect_crested();
+            silly.Parent = true;
+            bool isTrue = silly.Parent;
+            Assert.True(isTrue);
+        }
+
+        
 
     }
 }
